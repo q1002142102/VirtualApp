@@ -18,10 +18,7 @@ jobs:
       with:
         java-version: '11'
         distribution: 'adopt'
-        
-    - name: cd dir
-      run: cd VirtualApp
     - name: Grant execute permission for gradlew
-      run: ls -al && chmod +x gradlew
+      run: chmod +x VirtualApp/gradlew
     - name: Build with Gradle
-      run: ./gradlew build
+      run: cd VirtualApp && ./gradlew build
