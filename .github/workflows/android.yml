@@ -22,6 +22,6 @@ jobs:
     - name: cd dir
       run: cd VirtualApp
     - name: Grant execute permission for gradlew
-      run: pwd && chmod +x gradlew
+      run: ls -al && chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
