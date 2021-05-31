@@ -19,9 +19,9 @@ jobs:
         java-version: '8.0'
         distribution: 'adopt'
     - name: set ndk r14
-    - uses: nttld/setup-ndk@v1
+      uses: nttld/setup-ndk@v1
       with:
-        ndk-version: r14
+        ndk-version: 'r14'
     - name: Grant execute permission for gradlew
       run: chmod +x VirtualApp/gradlew
     - name: Build with Gradle
